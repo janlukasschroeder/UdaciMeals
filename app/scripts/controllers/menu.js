@@ -9,8 +9,18 @@
  */
 angular.module('udaciMealsApp')
   .controller('MenuCtrl', function () {
-    this.id = 'strawberry-pudding';
-    this.name = 'Strawberry Pudding';
-    this.img = 'strawberry-pudding.jpg';
-    this.rating = 5;
+    this.items = [
+      {
+        id: 'strawberry-pudding',
+        name: 'Strawberry Pudding',
+        img: 'strawberry-pudding.jpg',
+        rating: 5.0
+      },
+      {
+        id: 'strawberry-pudding2',
+        name: 'Strawberry Pudding 2',
+        img: 'strawberry-pudding2.jpg',
+        rating: 3.0
+      }
+    ]
   });
