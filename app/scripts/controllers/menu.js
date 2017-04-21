@@ -12,6 +12,7 @@ angular.module('udaciMealsApp')
     var vm = this;
 
     menu.getMenu().done(function(data) {
+      console.log(data.header);
       vm.items = data;
     });
 
