@@ -2,18 +2,22 @@
   <div class="items-container" >
     <div class="col-md-4">
       <h4>{{item.name}}</h4>
-      <p>Rating: {{menu.rating}}
+      <p>Rating: {{item.rating}}
         <span ng-if="item.rating > 4.0" ng-class="{highlight: item.rating > 4.5}"> - People love this item!</span>
+
+        <button ng-click="menu.increment(item)">+</button>
+        <button ng-click="menu.decrement(item)">-</button>
+
       </p>
       <p>Image: {{item.img}}</p>
       <img class="item__image" ng-src="images/yeoman.png" alt="{{item.name}}">
-      <p>
-        <textarea ng-model="menu.newReview" name="menu.review" rows="3" cols="40"></textarea>
-      </p>
-      <p>
-        {{item.newReview}}
-        <span ng-if="!item.newReview">Why not write a review!</span>
-      </p>
+      <!--<p>-->
+        <!--<textarea ng-model="menu.newReview" name="menu.review" rows="3" cols="40"></textarea>-->
+      <!--</p>-->
+      <!--<p>-->
+        <!--{{item.newReview}}-->
+        <!--<span ng-if="!item.newReview">Why not write a review!</span>-->
+      <!--</p>-->
     </div>
   </div>
 </div>
