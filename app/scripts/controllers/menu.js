@@ -16,6 +16,10 @@ angular.module('udaciMealsApp')
       vm.items = data;
     });
 
+    this.chooseItem = function(menuCategory, menuItemName) {
+      menu.chooseMenuOption(menuCategory, menuItemName);
+    };
+
     this.increment = function(item) {
       item.rating = ((item.rating * 10) + 1) /10;
     };
